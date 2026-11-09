@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Redaction+50:ital,wght@0,400;0,700;1,400&display=swap");
+
+.redaction-50-regular {
+  font-family: "Redaction 50", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.redaction-50-bold {
+  font-family: "Redaction 50", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.redaction-50-regular-italic {
+  font-family: "Redaction 50", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+:root {
+  --Lava-red: #e42207;
+  --Lemon-lime: #a9ed3d;
+  --Fresh-green: #34cd3f;
+  --Black-bean: #081910;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Redaction 50", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  min-height: 100vh;
+}
+
+header {
+  background-image: url(images/header_image.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: var(--Lava-red);
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+nav ul li a {
+  color: var(--Lava-red);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: var(--Fresh-green);
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  color: var(--Lava-red);
+}
+
+footer {
+  background-color: var(--Black-bean);
+  color: var(--Fresh-green);
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+footer small {
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-image {
+  width: 200px; /* Stała, mniejsza szerokość obrazka */
+  height: auto; /* Zachowanie proporcji */
+  float: left; /* Wypycha obraz na lewą stronę, pozwalając tekstowi opływać go z prawej */
+  margin-right: 20px; /* Odstęp tekstowy od prawej strony obrazka */
+  margin-bottom: 10px; /* Odstęp od dołu */
+  border-radius: 6px;
+}
+
+.side-image2 {
+  width: 300px; /* Stała, mniejsza szerokość obrazka */
+  height: auto; /* Zachowanie proporcji */
+  float: right; /* Wypycha obraz na lewą stronę, pozwalając tekstowi opływać go z prawej */
+  margin-right: 20px; /* Odstęp tekstowy od prawej strony obrazka */
+  margin-bottom: 10px; /* Odstęp od dołu */
+  border-radius: 6px;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form label {
+  font-weight: 600;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+  padding: 0.75rem;
+  border: 1px solid var(--Lava-red);
+  background-color: black;
+  color: var(--Fresh-green);
+  font-size: 1rem;
+}
+
+form input[type="submit"],
+.btn {
+  background-color: black;
+  color: var(--Fresh-green);
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--Fresh-green);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: fit-content;
+}
+
+form input[type="submit"]:hover,
+.btn:hover {
+  background-color: var(--Black-bean);
+  color: var(--Lemon-lime);
+  border: 1px solid var(--Lemon-lime);
+}
+
+.success-box {
+  display: none;
+  padding: 1rem;
+  background-color: var(--Lemon-lime);
+  color: var(--Black-bean);
+  margin-top: 1rem;
+}
+
+.error-msg {
+  color: #ef4444;
+  font-size: 0.85rem;
+  display: none;
+}
+
+.filter-btns {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  border: 1px solid var(--Fresh-green);
+  background: black;
+  color: var(--Fresh-green);
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: var(--Fresh-green);
+  color: black;
+  border: none;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.04);
+}
+
+.filterable-video {
+  display: none;
+}
+
+.filterable-video video {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 1rem;
+  border: 2px solid var(--Black-bean);
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  main {
+    padding: 0 1rem;
+    margin: 1rem auto;
+  }
+
+  .filter-btn {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Galeria multimedialna</h1>
+      <nav>
+        <ul>
+          <li><a href="Home.html">Główna</a></li>
+          <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Dynamiczne filtrowanie (JS) -->
+      <div class="filter-btns">
+        <button class="filter-btn active" data-category="all">Wszystkie</button>
+        <button class="filter-btn" data-category="Burst-City">
+          Burst City
+        </button>
+        <button class="filter-btn" data-category="Death-Powder">
+          Death Powder
+        </button>
+        <button class="filter-btn" data-category="Tetsuo">
+          Tetsuo: The Iron Man
+        </button>
+        <button class="filter-btn" data-category="pinocchio">
+          Pinocchio 964
+        </button>
+        <button class="filter-btn" data-category="rubbers-lover">
+          Rubber's Lover
+        </button>
+        <button class="filter-btn" data-category="electric-dragon">
+          Electric Dragon 80000V
+        </button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item Burst-City">
+          <img src="images/burst-city-poster.jpg" />
+        </div>
+        <div class="gallery-item Death-Powder">
+          <img src="images/death-powder-poster.jpg" />
+        </div>
+        <div class="gallery-item Tetsuo">
+          <img src="images/tetsuo_poster.jpg" />
+        </div>
+        <div class="gallery-item pinocchio">
+          <img src="images/pinokio_poster.jpg" />
+        </div>
+        <div class="gallery-item rubbers-lover">
+          <img src="images/rubers_lover_poster.jpg" />
+        </div>
+        <div class="gallery-item electric-dragon">
+          <img src="images/electric-dragon-poster.jpg" />
+        </div>
+
+        <div class="gallery-item Burst-City">
+          <img src="images/burst1.jpg" />
+        </div>
+        <div class="gallery-item Burst-City">
+          <img src="images/burst2.jpg" />
+        </div>
+        <div class="gallery-item Burst-City">
+          <img src="images/burst3.webp" />
+        </div>
+        <div class="gallery-item Burst-City">
+          <img src="images/burst.webp" />
+        </div>
+
+        <div class="gallery-item Death-Powder">
+          <img src="images/death1.webp" />
+        </div>
+        <div class="gallery-item Death-Powder">
+          <img src="images/death2.jpg" />
+        </div>
+        <div class="gallery-item Death-Powder">
+          <img src="images/death3.jpg" />
+        </div>
+        <div class="gallery-item Death-Powder">
+          <img src="images/death4.jpg" />
+        </div>
+
+        <div class="gallery-item Tetsuo">
+          <img src="images/tetsuo-bath.jpg" />
+        </div>
+        <div class="gallery-item Tetsuo">
+          <img src="images/tetsuo-chase.jpg" />
+        </div>
+        <div class="gallery-item Tetsuo">
+          <img src="images/tetsuo-flowers.jpg" />
+        </div>
+        <div class="gallery-item Tetsuo">
+          <img src="images/tetsuo-gays.jpg" />
+        </div>
+        <div class="gallery-item Tetsuo">
+          <img src="images/tetsuo-mutant.jpg" />
+        </div>
+
+        <div class="gallery-item pinocchio">
+          <img src="images/964-pinocchio-review2-1024x444.webp" />
+        </div>
+        <div class="gallery-item pinocchio">
+          <img src="images/header_image.jpg" />
+        </div>
+        <div class="gallery-item pinocchio">
+          <img src="images/964-pinocchio-1.avif" />
+        </div>
+        <div class="gallery-item pinocchio">
+          <img src="images/pinokio-mall.jpg" />
+        </div>
+
+        <div class="gallery-item rubbers-lover">
+          <img src="images/rubber1.jpg" />
+        </div>
+        <div class="gallery-item rubbers-lover">
+          <img src="images/rubber2.webp" />
+        </div>
+        <div class="gallery-item rubbers-lover">
+          <img src="images/rubber3.webp" />
+        </div>
+
+        <div class="gallery-item electric-dragon">
+          <img src="images/electric1.jpg" />
+        </div>
+        <div class="gallery-item electric-dragon">
+          <img src="images/electric1.webp" />
+        </div>
+        <div class="gallery-item electric-dragon">
+          <img src="images/electric2.jpg" />
+        </div>
+        <div class="gallery-item electric-dragon">
+          <img src="images/electric3.jpg" />
+        </div>
+      </div>
+
+      <section class="filterable-video Burst-City">
+        <h2>Trailer :</h2>
+        <video controls>
+          <source src="images/burst-city.mp4" type="video/mp4" />
+          Twoja przeglądarka nie wspiera odtwarzacza wideo.
+        </video>
+      </section>
+
+      <section class="filterable-video Tetsuo">
+        <h2>Trailer :</h2>
+        <video controls>
+          <source src="images/Tetsuo.mp4" type="video/mp4" />
+          Twoja przeglądarka nie wspiera odtwarzacza wideo.
+        </video>
+      </section>
+
+      <section class="filterable-video pinocchio">
+        <h2>Trailer :</h2>
+        <video controls>
+          <source src="images/pinokio.mp4" type="video/mp4" />
+          Twoja przeglądarka nie wspiera odtwarzacza wideo.
+        </video>
+      </section>
+
+      <section class="filterable-video rubbers-lover">
+        <h2>Trailer :</h2>
+        <video controls>
+          <source src="images/rubbers-lover.mp4" type="video/mp4" />
+          Twoja przeglądarka nie wspiera odtwarzacza wideo.
+        </video>
+      </section>
+
+      <section class="filterable-video electric-dragon">
+        <h2>Trailer :</h2>
+        <video controls>
+          <source src="images/electric-dragon.mp4" type="video/mp4" />
+          Twoja przeglądarka nie wspiera odtwarzacza wideo.
+        </video>
+      </section>
+    </main>
+    <footer>
+      <small>Wiktor Jabrzyk <span id="clock">00:00:00</span></small>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

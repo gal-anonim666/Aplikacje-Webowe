@@ -1,15 +1,54 @@
-
 html {
- background-color: #DDBEAA;
- height: 100vh;
+  background-color: #ddbeaa;
+  height: 100vh;
 }
 body {
- height: 100vh;
- margin: 0;
+  height: 100vh;
+  margin: 0;
 }
 .main-container {
- height: 100%;
- display: flex;
- align-items: center;
- justify-content: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.artykul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.nap-em-all {
+  width: 50%;
+  height: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 2px solid #000;
+  padding: 10px;
+}
+div {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.kwadraty {
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.divdiv {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  flex-direction: row;
 }
